@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Sans KR, sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+}
+body {
+  -ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  height: fit-content;
+}
+.introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  position: absolute;
+  top: 17%;
+  left: 26%;
+  z-index: 1;
+}
+
+.main_bg {
+  height: 100vh;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: absolute;
+  content: "";
+  background: fixed;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.horizon {
+  width: 5rem;
+  height: 0;
+  margin: 1.2rem auto;
+  border: none;
+  border-top: 0.5rem solid #030303;
+}
+.flexbox {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  height: fit-content;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes appearDisappear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#해설칸 {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+}
+#해설글{
+  font-size: 18px;
+}
+
+
+.appearing-disappearing {
+  animation: appearDisappear 1s infinite; /* 애니메이션 적용 */
+}
+.font_highlight {
+  font-weight: 700;
+  margin-bottom: 20px;
+  animation: bounce 0.5s infinite alternate; /* 애니메이션 적용 */
+  /* 다른 스타일들 */
+  background: linear-gradient(
+      128.93deg,
+      rgb(73, 13, 46) 22.41%,
+      rgb(228, 236, 153) 93.45%
+    )
+    text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.card {
+  margin-top: 20px;
+}
+/* .font_highlight {
+  
+  
+  } */
+.card {
+  margin-top: 20px;
+}
