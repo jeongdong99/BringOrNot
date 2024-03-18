@@ -1,12 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: Sans KR, sans-serif;
-}
-body {
-  min-height: 100vh;
-  display: flex;
-}
+
 body {
   -ms-overflow-style: none;
 }
@@ -45,13 +37,6 @@ body::-webkit-scrollbar {
   opacity: 0.8;
 }
 
-.horizon {
-  width: 5rem;
-  height: 0;
-  margin: 1.2rem auto;
-  border: none;
-  border-top: 0.5rem solid #030303;
-}
 .flexbox {
   display: flex;
   width: 100%;
@@ -92,10 +77,6 @@ body::-webkit-scrollbar {
   font-size: 18px;
 }
 
-
-.appearing-disappearing {
-  animation: appearDisappear 1s infinite; /* 애니메이션 적용 */
-}
 .font_highlight {
   font-weight: 700;
   margin-bottom: 20px;
@@ -103,7 +84,7 @@ body::-webkit-scrollbar {
   /* 다른 스타일들 */
   background: linear-gradient(
       128.93deg,
-      rgb(73, 13, 46) 22.41%,
+      rgb(226, 212, 19) 22.41%,
       rgb(228, 236, 153) 93.45%
     )
     text;
@@ -114,10 +95,34 @@ body::-webkit-scrollbar {
 .card {
   margin-top: 20px;
 }
-/* .font_highlight {
-  
-  
-  } */
-.card {
-  margin-top: 20px;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.introduction {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* 배경 색상 투명도 조절 */
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+}
+.font_highlight {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.horizon {
+  border-top: 2px solid #fff;
+  margin: 20px auto;
+  width: 50%;
+}
+#해설글 {
+  color: rgb(255, 94, 0);
+  font-size: 1.2rem;
+  line-height: 1.6;
 }

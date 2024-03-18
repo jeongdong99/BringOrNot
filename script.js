@@ -18,8 +18,8 @@ function firstSelectRender() {
   }
 }
 
-const form = document.getElementById("form");
-const secondDiv = form.firstElementChild.nextElementSibling;
+const form = document.getElementsByClassName("container-small");
+const secondDiv = form[0].firstElementChild.nextElementSibling;
 const thirdDiv = secondDiv.nextElementSibling;
 
 // 시 / 도 선택 시 이벤트
